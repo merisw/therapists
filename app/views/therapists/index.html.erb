@@ -1,2 +1,9 @@
 <%= link_to "New Therapist", new_therapist_path %>
+<h2>Therapists</h2>
+<ul>
+  <% @therapists.each do |therapist| %>
+    <li><%= link_to therapist.name, therapist %></li>
+  <% end %>
+</ul>
+
 
