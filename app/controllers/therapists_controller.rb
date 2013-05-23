@@ -36,6 +36,12 @@ class TherapistsController < ApplicationController
     end
   end
 
+  def destroy
+    @therapist.destroy
+    flash[:notice] = "Therapist has been deleted."
+    redirect_to therapists_path
+  end
+
   private
   def find_therapist
     @therapist = Therapist.find(params[:id])
