@@ -1,0 +1,17 @@
+<%= form_for(@assignment) do |f| %>
+  <p>
+    <%= f.label :fte %>
+    <%= f.text_field :fte %>
+  </p>
+
+  <p>
+    <%= f.label :caseload %>
+    <%= f.text_field :caseload %>
+  </p>
+
+  <p>
+    <%= f.label :days %>
+    <%= f.text_field :days %>
+  </p>
+  <%= f.submit %>
+<% end %>

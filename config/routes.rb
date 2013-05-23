@@ -1,6 +1,9 @@
 Therapists::Application.routes.draw do
-  root to: "therapists#index"
+  root to: "assignments#index"
   resources :therapists
+  resources :schools
+  resources :assignments
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
