@@ -1,8 +1,4 @@
 <%= form_for(@assignment) do |f| %>
-  <p>
-    <%= f.label :fte %>
-    <%= f.text_field :fte %>
-  </p>
 
   <p>
     <%= f.label :caseload %>
@@ -13,5 +9,20 @@
     <%= f.label :days %>
     <%= f.text_field :days %>
   </p>
+  <p>
+    <%= f.label :fte %>
+    <%= f.text_field :fte %>
+  </p>
+
+  <p>
+    <%= f.label :school_id %>
+    <%= f.collection_select :school_id, @schools, :id, :name %>
+  </p>
+
+  <p>
+    <%= f.label :therapist_id %>
+    <%= f.collection_select :therapist_id, @therapists, :id, :name %>
+  </p>
+
   <%= f.submit %>
 <% end %>

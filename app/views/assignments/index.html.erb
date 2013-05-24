@@ -1,9 +1,10 @@
-<%= link_to "New Assignment", new_assignment_path %>
+
 <h2>Assignments</h2>
 <ul>
   <% @assignments.each do |assignment| %>
-    <li><%= link_to assignment.caseload, assignment %></li>
+    <li><b><%= assignment.therapist.name %></b> has a caseload of <b><%= link_to assignment.caseload, assignment %></b> at <b><%= assignment.school.name %></b></li>
   <% end %>
 </ul>
+<%= link_to "New Assignment", new_assignment_path %>
 <%= link_to "New School", new_school_path %>
 <%= link_to "New Therapist", new_therapist_path %>

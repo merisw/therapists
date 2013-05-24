@@ -4,7 +4,7 @@ feature "Creating therapists" do
   scenario "can create a therapist" do
     visit '/'
     click_link "New Therapist"
-    fill_in "Name", with: "Carly Soare"
+    fill_in "Name", with: "Carly Simon"
     fill_in "Email", with: "carly@school.com"
     fill_in "Therapist type", with: "SLP"
     fill_in "Fte", with: "1.0"

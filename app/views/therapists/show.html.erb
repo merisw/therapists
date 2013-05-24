@@ -1,3 +1,5 @@
 <h2><%= @therapist.name %></h2>
 <%= link_to "Edit Therapist", edit_therapist_path(@therapist) %>
-<%= link_to "Delete Therapist", therapist_path(@therapist), :method => :delete, :confirm => "Are you sure you want to delete this therapist?" %>
+<%= link_to "Delete Therapist", therapist_path(@therapist), :method => :delete, :confirm => "Are you sure you want to delete this therapist?" %><br>
+<%= link_to "Back to Therapists", therapists_path(@therapist) %>
+<%= link_to "Home", assignments_path %>

@@ -2,14 +2,14 @@ require 'spec_helper'
 
 feature "Editing therapists" do
   before do
-    Factory(:therapist, name: "Carly Soare")
+    Factory(:therapist, name: "Carly Simon")
     visit '/'
-    click_link "Carly Soare"
+    click_link "Carly Simon"
     click_link "Edit Therapist"
   end
 
   scenario "Updating a therapist" do
-    fill_in "Name", with: "Carly Sautner"
+    fill_in "Name", with: "Carly Samson"
     click_button "Update Therapist"
     page.should have_content("Therapist has been updated.")
   end

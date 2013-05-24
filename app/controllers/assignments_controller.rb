@@ -3,6 +3,8 @@ class AssignmentsController < ApplicationController
 
   def new
     @assignment = Assignment.new
+    @therapists = Therapist.all
+    @schools = School.all
   end
 
   def create
@@ -24,6 +26,8 @@ class AssignmentsController < ApplicationController
   end
 
   def edit
+    @therapists = Therapist.all
+    @schools = School.all
   end
 
   def update
