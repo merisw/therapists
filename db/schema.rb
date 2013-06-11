@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20130523192645) do
     t.string   "name"
     t.string   "email"
     t.string   "therapist_type"
-    t.string   "fTE"
+    t.string   "fte"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
